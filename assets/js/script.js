@@ -1,0 +1,9 @@
+$(".show").click(function(){
+    $(this).toggleClass('open');
+    $(".con-hide").toggle("fast");
+    document.getElementById("con-hide").style.display="flex";
+  });
+  $(".close").click(function(){
+    $(".show").toggleClass('open');
+    $(".con-hide").toggle("fast");
+  });

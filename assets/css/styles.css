@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "canaro-bold";
+  src: url("../fonts/canaro_bold/CanaroW00-Bold.eot");
+  src: url("../fonts/canaro_bold/CanaroW00-Bold.woff") format("woff"),
+  url("../fonts/canaro_bold/CanaroW00-Bold.ttf") format("truetype"),
+  url("../fonts/canaro_bold/CanaroW00-Bold.svg") format("svg");
+}
+@font-face {
+  font-family: "canaro-medium";
+  src: url("../fonts/canaro_medium/CanaroW00-Medium.eot");
+  src: url("../fonts/canaro_medium/CanaroW00-Medium.woff") format("woff"),
+  url("../fonts/canaro_medium/CanaroW00-Medium.ttf") format("truetype"),
+  url("../fonts/canaro_medium/CanaroW00-Medium.svg") format("svg");
+}
