@@ -2,6 +2,13 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class State extends CI_Controller {
+    public function __construct()
+    {
+        parent::__construct();
+        $this->load->model('State_model');
+    }
+
+
     public function formListKebutuhan() 
     {
         $this->form_validation->set_rules('nama_ukm', 'Nama UKM', 'trim|required');
@@ -13,7 +20,8 @@ class State extends CI_Controller {
             $this->load->view('templates/header');
             $this->load->view('state/form_list_kebutuhan');
         } else {
-            echo "ok";
+            $this->State_model->addListKebutuhan();
+            redirect('home');
         }
     }
 }
