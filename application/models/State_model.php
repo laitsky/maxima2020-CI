@@ -26,4 +26,9 @@ class State_model extends CI_Model {
 
         $this->db->insert('list_kebutuhan_state', $data);
     }
+
+    public function getListKebutuhan() 
+    {
+        return $this->db->get('list_kebutuhan_state')->result_array();
+    }
 }

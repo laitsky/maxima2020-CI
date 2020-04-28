@@ -28,6 +28,7 @@ class Auth extends CI_Controller {
             if ($user['is_active'] == 1) {
                 if(password_verify($password, $user['password'])) {
                     $data = array(
+                        'nama' => $user['nama'],
                         'email' => $user['email'],
                         'role_id' => $user['role_id']
                     );
@@ -80,5 +81,15 @@ class Auth extends CI_Controller {
             $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">Registrasi akun MAXIMA Berhasil!</div>');
             redirect('home');
         }
+    }
+
+    public function logout()
+    {
+        $this->session->unset_userdata('nama');
+        $this->session->unset_userdata('email');
+        $this->session->unset_userdata('role_id');
+     
+        $this->session->set_flashdata('logout_msg', '<div class="alert alert-success" role="alert">Kamu berhasil logout!</div>');
+        redirect('auth/login');
     }
 }

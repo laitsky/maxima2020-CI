@@ -6,7 +6,5 @@
     <script src="<?= base_url('assets/js/script.js'); ?>"></script>
     <script src="<?= base_url('assets/js/jquery.easing.min.js'); ?>"></script>
     <script src="<?= base_url('assets/js/sb-admin-2.min.js'); ?>"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-    <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
   </body>
 </html>

@@ -4,6 +4,7 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Situs Resmi Malam Ekspresi Mahasiswa Universitas Multimedia Nusantara 2020 - Pave Your Own Journey.">
 
@@ -34,7 +35,7 @@
                     <li class="nav-item"><a class="item-hide" href="#">LINK</a></li>
                 </ul>
                 <ul>
-                    <li class="nav-item-right"><button class="mxm-btn-yellow" id="signin">SIGN IN</button></li>
+                    <li class="nav-item-right"><a href="<?= base_url('auth/login'); ?>" class="mxm-btn-yellow" id="signin">SIGN IN</a></li>
                     <li class="nav-item-right">
                         <button class="show">
                             <span></span>
@@ -57,7 +58,8 @@
                     <li class="nav-item"><a href="#">LINK</a></li>
                 </ul>
                 <ul class="nav-hide">
-                    <li class="nav-item-right"><button class="mxm-btn-yellow" id="signin1">SIGN IN</button></li>
+                    <li class="nav-item-right"><a href="<?= base_url('auth/login'); ?>" class="mxm-btn-yellow" id="signin1">SIGN IN</a></li>
+                    
                 </ul>
             </div>
         </nav>
