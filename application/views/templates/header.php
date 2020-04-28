@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="<?= base_url('assets/css/styles.css'); ?>">
     <link rel="stylesheet" href="<?= base_url('assets/css/maxima.css'); ?>">
     <link rel="stylesheet" href="<?= base_url('assets/css/templates/header.css'); ?>">
+    <link rel="stylesheet" href="<?= base_url('assets/css/sb-admin-2.min.css'); ?>">
 
     <link rel="icon" href="<?= base_url('assets/icons/mxm20_title_icon.png'); ?>">
 
