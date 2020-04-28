@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -18,7 +18,6 @@
     <link rel="stylesheet" href="<?= base_url('assets/css/sb-admin-2.min.css'); ?>">
 
     <link rel="icon" href="<?= base_url('assets/icons/mxm20_title_icon.png'); ?>">
-
     <title>MAXIMA 2020</title>
 </head>
 
@@ -27,7 +26,7 @@
         <nav class="nav">
             <div class="con">
                 <ul>
-                    <li class="nav-item"><img class="nav-img" src="<?= base_url('assets/icons/mxm20-icon-144x144.png'); ?>" alt="Logo MAXIMA 2020"><a class="item-show" href="<?= base_url(); ?>" style="color : #F4224B">MAXIMA 2020</a></li>
+                    <li class="nav-item"><a href="<?= base_url(); ?>"><img class="nav-img" src="<?= base_url('assets/icons/mxm20-icon-144x144.png'); ?>" alt="Logo MAXIMA 2020"></a><a class="item-show" href="<?= base_url(); ?>" style="color : #F4224B">MAXIMA 2020</a></li>
                     <li class="nav-item"><a class="item-hide" href="<?= base_url('state/formListKebutuhan') ?>">Form List Kebutuhan STATE</a></li>
                     <li class="nav-item"><a class="item-hide" href="#">LINK</a></li>
                     <li class="nav-item"><a class="item-hide" href="#">LINK</a></li>
@@ -51,7 +50,7 @@
                 </ul>
                 <ul class="nav-hide">
                     <li class="nav-item-hide"><img class="nav-img-hide" src="<?= base_url('assets/icons/mxm20-icon-144x144.png'); ?>" alt="Logo MAXIMA 2020"></li>
-                    <li class="nav-item"><a href="#">LINK</a></li>
+                    <li class="nav-item"><a href="<?= base_url('state/formListKebutuhan') ?>">Form List Kebutuhan STATE</a></li>
                     <li class="nav-item"><a href="#">LINK</a></li>
                     <li class="nav-item"><a href="#">LINK</a></li>
                     <li class="nav-item"><a href="#">LINK</a></li>
