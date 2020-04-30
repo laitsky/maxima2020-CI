@@ -2,7 +2,7 @@
     display: flex;
 }
 
-ul{
+.nav-ul{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -32,7 +32,6 @@ ul{
 }
 
 .nav-item a{
-    text-decoration: none;
     font-family: canaro-bold;
 }
 
@@ -50,13 +49,17 @@ ul{
 }
 
 .item-hide:hover{
-    
+    text-decoration: none;
     background-color: #FFD008;
 }
 
 .nav-item-right{
     display: flex;
     align-items: center;
+}
+
+.nav-item-right a:hover{
+    text-decoration: none;
 }
 
 .nav-item{
@@ -214,7 +217,7 @@ ul{
         display: flex;
     }
 
-    ul{
+    nav.ul{
         flex-direction: row;
     }
 
