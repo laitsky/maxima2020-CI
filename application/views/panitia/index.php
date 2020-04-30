@@ -12,6 +12,9 @@
                 <th scope="col">Nama PJ</th>
                 <th scope="col">Contact PJ</th>
                 <th scope="col">Deskripsi Kegiatan</th>
+                <th scope="col">Waktu (jam)</th>
+                <th scope="col">Ruangan</th>
+                <th scope="col">Kuota Peserta</th>
             </tr>
         </thead>
         <tbody>
@@ -22,6 +25,9 @@
                     <td><?= $lk['nama_pj']; ?></td>
                     <td><?= $lk['contact_pj']; ?></td>
                     <td><?= $lk['deskripsi_kegiatan']; ?></td>
+                    <td><?= $lk['waktu']; ?></td>
+                    <td><?= $lk['ruangan']; ?></td>
+                    <td><?= $lk['kuota_peserta']; ?></td>
                 </tr>
             <?php endforeach; ?>
         </tbody>
