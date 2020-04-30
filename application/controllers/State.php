@@ -19,6 +19,7 @@ class State extends CI_Controller {
         if(!($this->form_validation->run())) {
             $this->load->view('templates/header');
             $this->load->view('state/form_list_kebutuhan');
+            $this->load->view('templates/footer');
         } else {
             $this->State_model->addListKebutuhan();
             redirect('home');

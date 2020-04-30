@@ -26,7 +26,7 @@
     <header>
         <nav class="nav">
             <div class="con">
-                <ul>
+                <ul class="nav-ul">
                     <li class="nav-item"><a href="<?= base_url(); ?>"><img class="nav-img" src="<?= base_url('assets/icons/mxm20-icon-144x144.png'); ?>" alt="Logo MAXIMA 2020"></a><a class="item-show" href="<?= base_url(); ?>" style="color : #F4224B">MAXIMA 2020</a></li>
                     <li class="nav-item"><a class="item-hide" href="<?= base_url('state/formListKebutuhan') ?>">Form List Kebutuhan STATE</a></li>
                     <li class="nav-item"><a class="item-hide" href="#">LINK</a></li>
@@ -34,7 +34,7 @@
                     <li class="nav-item"><a class="item-hide" href="#">LINK</a></li>
                     <li class="nav-item"><a class="item-hide" href="#">LINK</a></li>
                 </ul>
-                <ul>
+                <ul class="nav-ul">
                     <li class="nav-item-right"><a href="<?= base_url('auth/login'); ?>" class="mxm-btn-yellow" id="signin">SIGN IN</a></li>
                     <li class="nav-item-right">
                         <button class="show">
@@ -46,10 +46,10 @@
                 </ul>
             </div>
             <div class="con-hide" id="con-hide">
-                <ul class="nav-hide-before">
+                <ul class="nav-hide-before nav-ul">
                     <li class="nav-item"><button class="close"><i class="lar la-times-circle" id="iconcls"></i></button></li>
                 </ul>
-                <ul class="nav-hide">
+                <ul class="nav-hide nav-ul">
                     <li class="nav-item-hide"><img class="nav-img-hide" src="<?= base_url('assets/icons/mxm20-icon-144x144.png'); ?>" alt="Logo MAXIMA 2020"></li>
                     <li class="nav-item"><a href="<?= base_url('state/formListKebutuhan') ?>">Form List Kebutuhan STATE</a></li>
                     <li class="nav-item"><a href="#">LINK</a></li>
@@ -57,7 +57,7 @@
                     <li class="nav-item"><a href="#">LINK</a></li>
                     <li class="nav-item"><a href="#">LINK</a></li>
                 </ul>
-                <ul class="nav-hide">
+                <ul class="nav-hide nav-ul">
                     <li class="nav-item-right"><a href="<?= base_url('auth/login'); ?>" class="mxm-btn-yellow" id="signin1">SIGN IN</a></li>
                     
                 </ul>
