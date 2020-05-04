@@ -15,6 +15,16 @@
                 <th scope="col">Waktu (jam)</th>
                 <th scope="col">Ruangan</th>
                 <th scope="col">Kuota Peserta</th>
+                <th scope="col">Jumlah Meja</th>
+                <th scope="col">Jumlah Kursi</th>
+                <th scope="col">Jumlah Kabel Roll</th>
+                <th scope="col">Jumlah Microphone</th>
+                <th scope="col">Jumlah Sound System</th>
+                <th scope="col">Jumlah Layar</th>
+                <th scope="col">Jumlah Proyektor</th>
+                <th scope="col">Jumlah PC</th>
+                <th scope="col">Perlengkapan Peserta STATE 2020</th>
+
             </tr>
         </thead>
         <tbody>
@@ -28,6 +38,16 @@
                     <td><?= $lk['waktu']; ?></td>
                     <td><?= $lk['ruangan']; ?></td>
                     <td><?= $lk['kuota_peserta']; ?></td>
+                    <td><?= $lk['jml_meja']; ?></td>
+                    <td><?= $lk['jml_kursi']; ?></td>
+                    <td><?= $lk['jml_kabelroll']; ?></td>
+                    <td><?= $lk['jml_mic']; ?></td>
+                    <td><?= $lk['jml_soundsystem']; ?></td>
+                    <td><?= $lk['jml_layar']; ?></td>
+                    <td><?= $lk['jml_proyektor']; ?></td>
+                    <td><?= $lk['jml_pc']; ?></td>
+                    <td><?= $lk['perlengkapan_peserta']; ?></td>
+
                 </tr>
             <?php endforeach; ?>
         </tbody>

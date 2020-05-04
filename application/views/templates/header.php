@@ -28,11 +28,11 @@
             <div class="con">
                 <ul class="nav-ul">
                     <li class="nav-item"><a href="<?= base_url(); ?>"><img class="nav-img" src="<?= base_url('assets/icons/mxm20-icon-144x144.png'); ?>" alt="Logo MAXIMA 2020"></a><a class="item-show" href="<?= base_url(); ?>" style="color : #F4224B">MAXIMA 2020</a></li>
-                    <li class="nav-item"><a class="item-hide" href="<?= base_url('state/formListKebutuhan') ?>">Form List Kebutuhan STATE</a></li>
+                    <li class="nav-item"><a class="item-hide" href="<?= base_url('state/formListKebutuhan') ?>">FORM LIST KEBUTUHAN STATE</a></li>
+                    <!--<li class="nav-item"><a class="item-hide" href="#">LINK</a></li>
                     <li class="nav-item"><a class="item-hide" href="#">LINK</a></li>
                     <li class="nav-item"><a class="item-hide" href="#">LINK</a></li>
-                    <li class="nav-item"><a class="item-hide" href="#">LINK</a></li>
-                    <li class="nav-item"><a class="item-hide" href="#">LINK</a></li>
+                    <li class="nav-item"><a class="item-hide" href="#">LINK</a></li>-->
                 </ul>
                 <ul class="nav-ul">
                     <li class="nav-item-right"><a href="<?= base_url('auth/login'); ?>" class="mxm-btn-yellow" id="signin">SIGN IN</a></li>

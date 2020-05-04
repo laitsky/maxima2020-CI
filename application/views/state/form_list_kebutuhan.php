@@ -1,4 +1,4 @@
-<div class="container w-75">
+<div class="container w-75 my-5">
 <?= $this->session->flashdata('message'); ?>
 	<form action="formListKebutuhan" method="POST" id="list-kebutuhan-form" class="pt-3">
 		<div class="form-group">
@@ -37,7 +37,7 @@
 			<input type="number" class="form-control" id="kuota" name="kuota" value="<?= set_value('ruangan'); ?>">
 		</div>
 		<hr>
-		<h3>Perlengkapan yang dibutuhkan oleh UKM/Media Kampus</h3>
+		<h3 class="pb-2">Perlengkapan yang dibutuhkan oleh UKM/Media Kampus:</h3>
 		<div class="form-group row">
 			<div class="col-sm-3">
 				<label for="jml_meja">Meja</label>
