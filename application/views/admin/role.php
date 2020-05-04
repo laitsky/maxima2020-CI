@@ -29,7 +29,7 @@
         <div class="col-md-6">
 
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addSubmenuModal">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#newRoleModal">
                 <i class="las la-plus"></i>Tambah submenu baru
             </button>
         </div>
@@ -39,34 +39,19 @@
             <thead>
                 <tr>
                     <th scope="col" class="text-center">#</th>
-                    <th scope="col" class="text-center">Menu</th>
-                    <th scope="col" class="text-center">Judul Submenu</th>
-                    <th scope="col" class="text-center">URL</th>
-                    <th scope="col" class="text-center">Icon</th>
-                    <th scope="col" class="text-center">Aktif?</th>
+                    <th scope="col" class="text-center">Role</th>
                     <th scope="col" class="text-center">Action</th>
                 </tr>
             </thead>
             <tbody>
-                <?php foreach ($sub_menu as $k => $sm) : ?>
+                <?php foreach ($role as $k => $r) : ?>
                     <tr>
                         <th scope="row" class="text-center"><?= ($k + 1); ?></th>
-                        <td class="text-center"><?= $sm['menu']; ?></td>
-                        <td class="text-center"><?= $sm['title']; ?></td>
-                        <td class="text-center"><?= $sm['url']; ?></td>
-                        <td class="text-center"><i class="<?= $sm['icon']; ?>"></i><?= $sm['icon']; ?></td>
+                        <td class="text-center"><?= $r['role']; ?></td>
                         <td class="text-center">
-                            <?php
-                            if ($sm['is_active']) {
-                                echo "Ya";
-                            } else {
-                                echo "Tidak";
-                            }
-                            ?>
-                        </td>
-                        <td class="text-center">
-                            <a href="edit_kelola_submenu/<?= $sm['id']; ?>"><span class="badge badge-warning p-2">Edit</span></a>
-                            <a href="hapus_kelola_submenu/<?= $sm['id']; ?>"><span class="badge badge-danger p-2">Hapus</span></a>
+                            <a href="<?= base_url('admin/role_access/' . $r['id']); ?>"><span class="badge badge-success p-2">Access</span></a>
+                            <a href="edit_kelola_submenu/<?= $r['id']; ?>"><span class="badge badge-warning p-2">Edit</span></a>
+                            <a href="hapus_kelola_submenu/<?= $r['id']; ?>"><span class="badge badge-danger p-2">Hapus</span></a>
                         </td>
                     </tr>
                 <?php endforeach; ?>
@@ -74,11 +59,11 @@
     </div>
 </div>
 <!-- Modal -->
-<div class="modal fade" id="addSubmenuModal" tabindex="-1" role="dialog" aria-labelledby="addSubmenuModalLabel" aria-hidden="true">
+<div class="modal fade" id="newRoleModal" tabindex="-1" role="dialog" aria-labelledby="newRoleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="addSubmenuModalLabel">Tambah submenu baru</h5>
+                <h5 class="modal-title" id="newRoleModalLabel">Tambah submenu baru</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>

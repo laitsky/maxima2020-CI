@@ -10,6 +10,7 @@
                             <div class="col-lg-12">
                                 <div class="p-5">
                                     <?= $this->session->flashdata('logout_msg'); ?>
+                                    <?= $this->session->flashdata('auth_guard'); ?>
                                     <div class="text-center">
                                         <h1 class="h4 text-gray-900 mb-4">LOGIN</h1>
                                     </div>
