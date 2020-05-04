@@ -1,13 +1,15 @@
 <!-- Sidebar -->
-<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+<ul class="mxm-sidenav">
 
     <!-- Sidebar - Brand -->
-    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
-        <div class="sidebar-brand-text mx-3">MAXIMA 2020</div>
+    <div class="mxm-sidenav-close">
+        <button class="mxm-close"><i class="lar la-times-circle" id="iconcls"></i></button>
+    </div>
+    <a href="<?php echo base_url()?>" class="mxm-sidenav-header">
+        <img class="mxm-sidenav-img" src="<?= base_url('assets/icons/mxm20-icon-144x144.png'); ?>" alt="Logo MAXIMA 2020">MAXIMA 2020
     </a>
 
-    <!-- Divider -->
-    <hr class="sidebar-divider">
+    <hr class="mxm-sidenav-divider">
 
     <!--QUERY MENU-->
     <?php
@@ -23,7 +25,7 @@
     ?>
 
     <?php foreach ($menu as $m) : ?>
-        <div class="sidebar-heading">
+        <div class="mxm-sidenav-subheader">
             <?= $m['menu']; ?>
         </div>
 
@@ -41,23 +43,14 @@
 
         <?php foreach ($subMenu as $sm) : ?>
 
-                <li class="nav-item">
-                <a class="nav-link pb-0" href="<?= base_url($sm['url']); ?>">
+                <li class="mxm-sidenav-item">
+                <a href="<?= base_url($sm['url']); ?>">
                     <i class="<?= $sm['icon']; ?>"></i>
                     <span><?= $sm['title']; ?></span></a>
                 </li>
             <?php endforeach; ?>
 
-            <hr class="sidebar-divider mt-3">
+            <hr class="mxm-sidenav-divider">
         <?php endforeach; ?>
-
-        <!-- Divider -->
-        <hr class="sidebar-divider d-none d-md-block">
-
-        <!-- Sidebar Toggler (Sidebar) -->
-        <div class="text-center d-none d-md-inline">
-            <button class="rounded-circle border-0" id="sidebarToggle"></button>
-        </div>
-
 </ul>
 <!-- End of Sidebar -->

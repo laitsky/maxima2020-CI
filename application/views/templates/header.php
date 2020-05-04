@@ -59,7 +59,6 @@
                 </ul>
                 <ul class="nav-hide nav-ul">
                     <li class="nav-item-right"><a href="<?= base_url('auth/login'); ?>" class="mxm-btn-yellow" id="signin1">SIGN IN</a></li>
-                    
                 </ul>
             </div>
         </nav>

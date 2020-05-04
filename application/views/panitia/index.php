@@ -1,5 +1,5 @@
 <!-- Begin Page Content -->
-<div class="container-fluid">
+<div class="container-fluid main">
 
     <!-- Page Heading -->
     <h1 class="h3 mb-4 text-gray-800">List Kebutuhan Organisator STATE 2020</h1>
