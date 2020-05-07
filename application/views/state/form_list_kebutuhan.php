@@ -1,4 +1,4 @@
-<div class="container w-75 my-5">
+<div class="container w-75 my-5" style="font-family: 'canaro-medium';">
 <?= $this->session->flashdata('message'); ?>
 	<form action="formListKebutuhan" method="POST" id="list-kebutuhan-form" class="pt-3">
 		<div class="form-group">
@@ -37,46 +37,47 @@
 			<input type="number" class="form-control" id="kuota" name="kuota" value="<?= set_value('ruangan'); ?>">
 		</div>
 		<hr>
-		<h3 class="pb-2">Perlengkapan yang dibutuhkan oleh UKM/Media Kampus:</h3>
+		<h3>Perlengkapan yang dibutuhkan oleh UKM/Media Kampus:</h3>
+		<h6 class="pb-2">Jumlah peminjaman barang diberikan limit karena bergantung pada ketersediaan yang ada.</h6>
 		<div class="form-group row">
 			<div class="col-sm-3">
 				<label for="jml_meja">Meja</label>
-				<input type="number" class="form-control" id="jml_meja" name="jml_meja" value="0">
+				<input type="number" class="form-control" id="jml_meja" name="jml_meja" min="0" max="4" value="0">
 			</div>
 			<div class="col-sm-3">
 				<label for="jml_kursi">Kursi</label>
-				<input type="number" class="form-control" id="jml_kursi" name="jml_kursi" value="0">
+				<input type="number" class="form-control" id="jml_kursi" name="jml_kursi" min="0" max="999" value="0">
 			</div>
 			<div class="col-sm-3">
 				<label for="jml_kabelroll">Kabel Roll</label>
-				<input type="number" class="form-control" id="jml_kabelroll" name="jml_kabelroll" value="0">
+				<input type="number" class="form-control" id="jml_kabelroll" name="jml_kabelroll" min="0" max="4" value="0">
 			</div>
 			<div class="col-sm-3">
 				<label for="jml_mic">Microphone</label>
-				<input type="number" class="form-control" id="jml_mic" name="jml_mic" value="0">
+				<input type="number" class="form-control" id="jml_mic" name="jml_mic" min="0" max="2" value="0">
 			</div>
 		</div>
 		<div class="form-group row">
 			<div class="col-sm-3">
 				<label for="jml_soundsystem">Sound System</label>
-				<input type="number" class="form-control" id="jml_mic" name="jml_soundsystem" value="0">
+				<input type="number" class="form-control" id="jml_mic" name="jml_soundsystem" min="0" max="2" value="0">
 			</div>
 			<div class="col-sm-3">
 				<label for="jml_layar">Layar</label>
-				<input type="number" class="form-control" id="jml_layar" name="jml_layar" value="0">
+				<input type="number" class="form-control" id="jml_layar" name="jml_layar" min="0" max="2" value="0">
 			</div>
 			<div class="col-sm-3">
 				<label for="jml_proyektor">Proyektor</label>
-				<input type="number" class="form-control" id="jml_proyektor" name="jml_proyektor" value="0">
+				<input type="number" class="form-control" id="jml_proyektor" name="jml_proyektor" min="0" max="2" value="0">
 			</div>
 			<div class="col-sm-3">
 				<label for="jml_pc">PC</label>
-				<input type="number" class="form-control" id="jml_pc" name="jml_pc" value="0">
+				<input type="number" class="form-control" id="jml_pc" name="jml_pc" min="0" max="2" value="0">
 			</div>
 		</div>
 		<hr>
 		<div class="form-group">
-			<label for="perlengkapan_peserta">Perlengkapan yang perlu dibawa oleh peserta STATE 2020</label>
+			<label for="perlengkapan_peserta">Perlengkapan yang perlu dibawa oleh peserta STATE 2020 (pakaian, peralatan, dan perlengkapan):</label>
 			<textarea type="text" class="form-control" style="resize:none;" id="perlengkapan_peserta" name="perlengkapan_peserta" rows="5"><?= set_value('perlengkapan_peserta'); ?></textarea>
 			<?= form_error('perlengkapan_peserta', '<small class="form-text text-danger">', '</small>'); ?>
 		</div>
