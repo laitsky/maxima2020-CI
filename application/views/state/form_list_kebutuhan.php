@@ -33,7 +33,7 @@
 						"Tracce",
 						"J-Cafe",
 						"Qorie",
-						"Obscure",
+						"Obscura",
 						"Street Dance",
 						"UMN Symphony Orchestra (USO)",
 						"Ultima Toys",
@@ -92,9 +92,9 @@
 				</div>
 			</div>
 			<div class="form-group">
-				<label for="deskripsi_kegiatan">Kegiatan yang akan dilakukan:</label>
+				<label for="deskripsi_kegiatan">Kegiatan yang akan dilakukan saat STATE 2020:</label>
 				<textarea type="text" class="form-control" style="resize:none;" id="deskripsi_kegiatan" name="deskripsi_kegiatan" rows="5"></textarea>
-				<?= form_error('nama_ukm', '<small class="form-text text-danger">', '</small>'); ?>
+				<?= form_error('deskripsi_kegiatan', '<small class="form-text text-danger">', '</small>'); ?>
 			</div>
 			<div class="form-group">
 				<label for="waktu">Waktu yang dibutuhkan untuk melakukan kegiatan (dalam jam):</label>

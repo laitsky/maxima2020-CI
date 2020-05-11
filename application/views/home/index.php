@@ -4,7 +4,7 @@
     <div>
       <h2>FORM LIST KEBUTUHAN<br> STATE 2020</h2>
       <div class="d-flex align-center justify-content-center mt-4">
-        <button class="mxm-btn-yellow">KLIK DISINI</button>
+        <a href="<?= base_url('state/formListKebutuhan'); ?>" class="mxm-btn-yellow">KLIK DISINI</a>
       </div>
     </div>
   </div>
