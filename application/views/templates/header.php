@@ -34,8 +34,8 @@
                     <li class="nav-item"><a class="item-hide" href="#">LINK</a></li>
                     <li class="nav-item"><a class="item-hide" href="#">LINK</a></li>-->
                 </ul>
-                <!--<ul class="nav-ul">
-                    <li class="nav-item-right"><a href="<?= base_url('auth/login'); ?>" class="mxm-btn-yellow" id="signin">SIGN IN</a></li>
+                <ul class="nav-ul">
+                    <!--<li class="nav-item-right"><a href="<?= base_url('auth/login'); ?>" class="mxm-btn-yellow" id="signin">SIGN IN</a></li>-->
                     <li class="nav-item-right">
                         <button class="show">
                             <span></span>
@@ -43,7 +43,7 @@
                             <span></span>
                         </button>
                     </li>
-                </ul>-->
+                </ul>
             </div>
             <div class="con-hide" id="con-hide">
                 <ul class="nav-hide-before nav-ul">
